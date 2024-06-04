@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <main class="container">
+    <form class="form" id="form" novalidate>
+     <fieldset class="form__group">
+      
+        <div class="form__group--day">
+          <label for="day" class="label">Day</label>
+          <input type="number" id="day" name="day" min="1" max="31" placeholder="DD" class="input">
+          <span class="error error--day hidden"></span>
+        </div>
+
+        <div class="form__group--month">
+          <label for="month" class="label">Month</label>
+          <input type="number" id="month" name="month" min="1" max="12" placeholder="MM" class="input">
+          <span class="error error--month hidden"></span>
+        </div>
+
+        <div class="form__group--year">
+          <label for="year" class="label">Year</label>
+          <input type="number" id="year" name="year" minlength="1" maxlength="4" placeholder="YYYY" class="input">
+          <span class="error error--year hidden"></span>
+        </div>
+     </fieldset>
+     <div class="btn__wrapper">
+        <button type="submit" class="form__btn">
+          <img src="./assets/images/icon-arrow.svg" alt="icon-arrow" class="btn__icon">
+        </button>
+     </div> 
+   </form>
+
+    <section class="form__result">
+      <p class="form__result--text form__result--text--day">
+        <span class="form__result--day dasshed">--</span>
+        years
+      </p>
+
+      <p class="form__result--text form__result--text--month">
+        <span class="form__result--month dasshed">--</span>
+        months
+      </p>
+
+      <p class="form__result--text form__result--text--year">
+        <span class="form__result--year dasshed">--</span>
+        days
+      </p>
+    </section>
+  </main>
+
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Sheikh-Mussadiq" target="_blank">Sheikh-Mussadiq</a>.
+  </div>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
